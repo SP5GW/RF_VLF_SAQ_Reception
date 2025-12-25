@@ -12,8 +12,8 @@
 <img src="./img/preamp/IMG_2328.jpg" width="800" height="600"/>
 </p>
 <p align="center">
-<img src="./img/preamp/IMG_2355.jpg" width="400" height="200"/>
-<img src="./img/preamp/IMG_2356.jpg" width="400" height="200"/>
+<img src="./img/preamp/IMG_2355.jpg" width="400" height="300"/>
+<img src="./img/preamp/IMG_2356.jpg" width="400" height="300"/>
 </p>
 
 
