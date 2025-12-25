@@ -22,6 +22,9 @@
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
+<p align="center">
+<img src="./img/preamp/preamp_bandwidth.png" width="700" height="500"/>
+</p>
 
 
 ## References
