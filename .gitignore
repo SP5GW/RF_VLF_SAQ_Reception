@@ -1,3 +1,8 @@
-# Ignore directories
+# Ignore directories with subs
 recordings/
-saqrx/
+
+# Ignore everything in the directory
+sim/*
+
+# Re-include .asc files
+!sim/*.asc
