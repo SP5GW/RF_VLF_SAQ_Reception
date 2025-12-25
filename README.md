@@ -13,7 +13,7 @@
 </p>
 <p align="center">
 <img src="./img/preamp/IMG_2355.jpg" width="400" height="300"/>
-<img src="./img/preamp/IMG_2356.jpg" width="400" height="300"/>
+<img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
 
