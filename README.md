@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-<img src="./img/preamp/preamp_bandwidth.png" width="700" height="500"/>
+<img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
 </p>
 
 
