@@ -33,8 +33,20 @@
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
+### Preamplifier tunning
+
+<p align="center">
+<img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
+</p>
+
+### Preamplifier performance
+
 <p align="center">
 <img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
+</p>
+
+<p align="center">
+<img src="./img/preamp/Gain_measurement.png" width="600" height="400"/>
 </p>
 
 
