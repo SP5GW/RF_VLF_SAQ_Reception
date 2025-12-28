@@ -64,7 +64,7 @@
 ## Conclusions
 
 <p align="center">
-<img src="./img/SAQTransmission.png" width="600" height="400"/>
+<img src="./img/SAQTransmission.png" width="600" height="200"/>
 </p>
 
 
