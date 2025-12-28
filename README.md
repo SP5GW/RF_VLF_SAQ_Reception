@@ -14,6 +14,10 @@
 <img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
 </p>
 
+<p align="center">
+<img src="./img/antenna/antenna_connected_directly_to_rsp1a.png" width="800" height="600"/>
+</p>
+
 ### Antenna Positioning
 
 <p align="center">
