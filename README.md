@@ -52,7 +52,7 @@
 </p>
 
 <p align="center">
-<img src="./img/preamp/Gain_measurement.png" width="600" height="400"/>
+<img src="./img/preamp/Gain_measurement.png" width="200" height="600"/>
 </p>
 
 ### Issues to avoid
