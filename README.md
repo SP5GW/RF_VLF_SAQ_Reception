@@ -66,6 +66,10 @@
 <img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
 </p>
 
+<p align="center">
+<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
+</p>
+
 
 ## Conclusions
 
