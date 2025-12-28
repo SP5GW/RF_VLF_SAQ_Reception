@@ -61,6 +61,12 @@
 
 #### Do not connect pre-amp input directly to waveform generator
 
+<p align="center">
+<img src="./meas/_30dBmInputSignal_Decimation32_2n2_SDR_Uno.png" width="400" height="300"/>
+<img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
+</p>
+
+
 ## Conclusions
 
 <p align="center">
