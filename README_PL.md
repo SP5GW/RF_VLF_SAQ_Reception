@@ -1,7 +1,4 @@
-<p align="center">
-<img src="./img/antenna/IMG_2331.jpg" width="400" height="300"/>
-<img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
-</p>
+
 
 # Wprowadzenie
 Pomysł przeprowadzenia odbioru sygnału emitowanego przez szwedzką stację SAQ nadającą spod Geteborga pojawił się przed ponad rokiem. Gdy pierwsza próba odbioru z wykorzystaniem anteny aktywnej miniwhip zakończyła się niepowodzeniem, postanowiłem spróbować ponwnie, ale tym razem wykorzystując przedwzmacniacz opisany na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1] w połączeniu z anteną magnetyczną.
@@ -11,6 +8,11 @@ Wyniki tego eksperymentu oraz wyzwania przed jakimi stanąłem w trakcie jego re
 # Antena
 
 ## Konstrukcja Anteny
+
+<p align="center">
+<img src="./img/antenna/IMG_2331.jpg" width="400" height="300"/>
+<img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
+</p>
 
 Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSPA1A z oprogramowaniem SDRPlay [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
 
@@ -24,6 +26,15 @@ W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny mi
 
 ## Orientacja Anteny względem radiostacji SAQ
 
+<p align="center">
+<img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
+<img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
+</p>
+
+<p align="center">
+<img src="./img/antenna_positioning/AzimuthMap.png" width="800" height="600"/>
+</p>
+
 Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgróbnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętaj o odznaczeniu opcji "true north" jeśli taka opcja występuje w Twojej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty mojej lokalizacji odnalazłem na stronie [4], zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
 
 W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skótkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
@@ -34,11 +45,23 @@ W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierun
 
 Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1]. W ramach tego projektu wprowadziłem następujące modyfikacje:
 
+<p align="center">
+<img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
+</p>
+
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
 3) Dodano wyjście sma-c w celu łatwiejszego przyłącznia odbiornika SDR takiego jak np. RSP1A [3], w przypadku współpracy przedwzmacniacza z odbiornikiem SDR nie jest wymagany dodatkowy tłumik sygnału, Funkcję tę realizuje filtr górnoprzepustowy utworzony przez elementy C10 (100 nF) oraz rezystor R9 (1 kΩ), pracujący z równoległym obciążeniem w postaci impedancji wejściowej odbiornika SDR (50 Ω). Po dołączeniu odbiornika SDR, charakteryzującego się znacznie niższą impedancją wejściową niż wejście liniowe karty dźwiękowej komputera PC, częstotliwość graniczna filtru ulega przesunięciu w kierunku niższych częstotliwości, co skutkuje efektywnym obniżeniem poziomu sygnału doprowadzanego do obciążenia o około 10 dB.
 4) Baterie 4V zastąpiono bardziej dostępnymi bateriami 9V.
 5) Dodano proste układy monitorujące stan baterii oparte o tranzystor BC546 oraz diody zabezpieczające przed niewłaściwą polaryzacją. W przypadku obniżenia napięcia zasilania poniżej 8,11V kolor diod LED D3/D4 zmienia się z zielonego na czerwony.
+
+<p align="center">
+<img src="./img/preamp/IMG_2328.jpg" width="800" height="600"/>
+</p>
+<p align="center">
+<img src="./img/preamp/IMG_2355.jpg" width="400" height="300"/>
+<img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
+</p>
 
 ## Strojenie przedwzmacniacza
 
@@ -46,11 +69,34 @@ Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane u�
 
 W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa nie połączone ze sobą kable o długości ok. 10-15cm) znajdującego się w pobliżu przedwzmacniacza lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
 
+<p align="center">
+<img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
+</p>
+
+### Preamplifier performance
+
+<p align="center">
+<img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
+</p>
+
+<p align="center">
+<img src="./img/preamp/Gain_measurement.png" width="600" height="600"/>
+</p>
+
 ## Potencjalne problemy do uniknięcia
 
 1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF.
 
 2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza może prowadzić do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu.
+
+<p align="center">
+<img src="./meas/_30dBmInputSignal_Decimation32_2n2_SDR_Uno.png" width="400" height="300"/>
+<img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
+</p>
+
+<p align="center">
+<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
+</p>
 
 # Oprogramowanie
 
@@ -61,6 +107,9 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 
 # Podsumowanie
 
+<p align="center">
+<img src="./img/SAQTransmission.png" width="200" height="600"/>
+</p>
 
 # Źródła
 
