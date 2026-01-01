@@ -66,6 +66,8 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
+Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
+
 ## Strojenie przedwzmacniacza
 
 Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane użycie specjalistycznej aparatury pomiarowej. Oczywiście możliwe jest wykorzystanie generatora funkcyjnego oraz oscyloskopu, jednak wystarczającą dokładność zapewnia obserwacja poziomu wzmocnienia szumów tła pochodzących z wejścia przedwzmacniacza pozostawionego bez podłączonej anteny. Jeżeli maksimum poziomu szumów występuje w pobliżu częstotliwości SAQ, można uznać, że układ został prawidłowo zestrojony. Należy przy tym uwzględnić, że obwód rezonansowy charakteryzuje się stosunkowo wąskim pasmem przenoszenia — w przedstawionej implementacji wynoszącym około 200 Hz — co wymaga dość precyzyjnego dostrojenia układu.
@@ -90,16 +92,22 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 
 1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF.
 
-2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza może prowadzić do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu.
+2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza  prowadzi do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu w porównaniu do sytuacji, w której obciążeniem uzwojenia pierwotnego jest antena. Jest to podyktowane faktem, że impedancja uzwojenia pierwotnego z szeregowo przyłączoną niską impedancją generatora sygnałowego (o charakterze mocno rezystancyjnym) istotnie wpływa na reaktancję obwodu rezansowego, podwyższając jego częstotliwość rezonansową. 
+ 
+Początkowo nie byłem swiadomy tego zjawiska i aby przy podłączonym generatorze uzyskać szczyt wzmocnienia przypadający na częstotliwość 17.2kHz dodałem do kondenatora C2 (8n2) równolegle kondensator o wartości 22nF. Niestety tak jak to ukazuje poniższa symulacja oraz wyniki pomiarów, po zastąpieniu generatora anteną , częstotliwość rezonansowa obwodu ulegała obniżeniu...
+
+<p align="center">
+<img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
+<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
+</p>
+
+Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zestrojenia układu na częstotliwość 17.2kHz z przyłączoną anteną.
 
 <p align="center">
 <img src="./meas/_30dBmInputSignal_Decimation32_2n2_SDR_Uno.png" width="400" height="300"/>
-<img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
 </p>
 
-<p align="center">
-<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
-</p>
+Należy dodać, że podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość.
 
 # Oprogramowanie
 
