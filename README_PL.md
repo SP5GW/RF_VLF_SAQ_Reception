@@ -94,7 +94,7 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 
 2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza  prowadzi do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu w porównaniu do sytuacji, w której obciążeniem uzwojenia pierwotnego jest antena. Jest to podyktowane faktem, że impedancja uzwojenia pierwotnego z szeregowo przyłączoną niską impedancją generatora sygnałowego (o charakterze mocno rezystancyjnym) istotnie wpływa na reaktancję obwodu rezansowego, podwyższając jego częstotliwość rezonansową. 
  
-Początkowo nie byłem swiadomy tego zjawiska i aby przy podłączonym generatorze uzyskać szczyt wzmocnienia przypadający na częstotliwość 17.2kHz dodałem do kondenatora C2 (8n2) równolegle kondensator o wartości 22nF. Niestety tak jak to ukazuje poniższa symulacja oraz wyniki pomiarów, po zastąpieniu generatora anteną , częstotliwość rezonansowa obwodu ulegała obniżeniu...
+Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w celu uzyskania maksimum wzmocnienia przy częstotliwości 17,2 kHz przy podłączonym generatorze, do kondensatora C2 (8,2 nF) dołączyłem równolegle dodatkowy kondensator o pojemności 22 nF. Jak jednak pokazuje przedstawiona poniżej symulacja oraz potwierdzają wyniki pomiarów, po odłączeniu generatora i zastąpieniu go anteną rzeczywista częstotliwość rezonansowa obwodu ulegała istotnemu obniżeniu.
 
 <p align="center">
 <img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
@@ -112,9 +112,25 @@ Należy dodać, że podczas testów sygnał SAQ był symulowany przez nośną z 
 # Oprogramowanie
 
 Układ przedwzmacniacza może współpracować zarówno z kartą dźwiękową PC jak też odbiornikiem SDR zdolnym do odbioru sygnałów w zakresie VLF (np. moduł RSP1A firmy SDRPlay). 
-W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdziło się oprogramowanie SAQrx dostępne na stronie Stowarzyszenia Przyjaciół Aleksandra Grimetona [1], lub oprgramwanie spectrumlab autorstwa Wolfganga Bueschera, DL4YHF. Zaletą pakietu spectrumlab jest dostępność funkcji wodospadu.
+W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdziło się oprogramowanie SAQrx dostępne na stronie Stowarzyszenia Przyjaciół Aleksandra Grimetona [1]:
+
+<p align="center">
+<img src="./img/software_options/saqrx 2026-01-01 235010.png" width="400" height="300"/>
+</p>
+
+oraz oprgramwanie spectrumlab autorstwa Wolfganga Bueschera, DL4YHF rekomendowane przez Jacka SQ5BPF:
+
+<p align="center">
+<img src="./img/software_options/spectrum_lab 2026-01-01 234459.png" width="600" height="400"/>
+</p>
+
+Zaletą pakietu spectrumlab jest dostępność funkcji wodospadu.
 
 W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bardzo zależny od wykorzystywanej platformy sprzętowej. W przypadku SDRUno RSP1A, najepszym wyborem wydaje się oprogramowanie rozwijane przez dostawcę sprzętu czyli program SDRPlay.
+
+<p align="center">
+<img src="./img/software_options/sdr_uno 2026-01-01 234807.png" width="600" height="400"/>
+</p>
 
 # Podsumowanie
 
