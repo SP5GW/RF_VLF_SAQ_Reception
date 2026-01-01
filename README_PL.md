@@ -37,7 +37,7 @@ Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana
 zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
 
 <p align="center">
-<img src="./img/antenna_positioning/AzimuthMap.png" width="800" height="600"/>
+<img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
 </p>
 
 W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skótkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
