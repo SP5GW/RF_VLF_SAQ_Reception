@@ -1,4 +1,6 @@
-
+<p align="center">
+<img src="./img/IMG_2358.jpg" width="800" height="600"/>
+</p> 
 
 # Wprowadzenie
 Pomysł przeprowadzenia odbioru sygnału emitowanego przez szwedzką stację SAQ nadającą spod Geteborga pojawił się przed ponad rokiem. Gdy pierwsza próba odbioru z wykorzystaniem anteny aktywnej miniwhip zakończyła się niepowodzeniem, postanowiłem spróbować ponwnie, ale tym razem wykorzystując przedwzmacniacz opisany na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1] w połączeniu z anteną magnetyczną.
@@ -26,16 +28,23 @@ W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny mi
 
 ## Orientacja Anteny względem radiostacji SAQ
 
+
+
+Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgróbnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętaj o odznaczeniu opcji "true north" jeśli taka opcja występuje w Twojej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty mojej lokalizacji odnalazłem na stronie [4], 
+
 <p align="center">
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
-<img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
+</p>
+
+zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
+
+<p align="center">
+<img src="./img/antenna_positioning/azimuth.png.png" width="400" height="300"/>
 </p>
 
 <p align="center">
 <img src="./img/antenna_positioning/AzimuthMap.png" width="800" height="600"/>
 </p>
-
-Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgróbnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętaj o odznaczeniu opcji "true north" jeśli taka opcja występuje w Twojej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty mojej lokalizacji odnalazłem na stronie [4], zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
 
 W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skótkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
 
