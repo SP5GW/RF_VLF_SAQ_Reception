@@ -28,8 +28,6 @@ W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny mi
 
 ## Orientacja Anteny względem radiostacji SAQ
 
-
-
 Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgróbnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętaj o odznaczeniu opcji "true north" jeśli taka opcja występuje w Twojej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty mojej lokalizacji odnalazłem na stronie [4], 
 
 <p align="center">
@@ -37,10 +35,6 @@ Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana
 </p>
 
 zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
-
-<p align="center">
-<img src="./img/antenna_positioning/azimuth.png.png" width="400" height="300"/>
-</p>
 
 <p align="center">
 <img src="./img/antenna_positioning/AzimuthMap.png" width="800" height="600"/>
