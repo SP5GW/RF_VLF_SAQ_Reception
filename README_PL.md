@@ -58,7 +58,7 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
 </p>
 
-*Zdjęcia 4 Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
+*Zdjęcia 5: Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
 
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
@@ -74,7 +74,7 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
-*Zdjęcia 5,6,7 Konstrukcja mechaniczna układu przedwzmacniacza.*
+*Zdjęcia 6,7,8: Konstrukcja mechaniczna układu przedwzmacniacza.*
 
 Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet z zakresu fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
 
@@ -88,7 +88,7 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 8 Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
+*Zdjęcia 9: Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
 
 ### Preamplifier performance
 
@@ -96,13 +96,13 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 <img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 8 Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych.*
+*Zdjęcia 10: Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych.*
 
 <p align="center">
 <img src="./img/preamp/Gain_measurement.png" width="600" height="600"/>
 </p>
 
-*Zdjęcia 8 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcia 11: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
 
 ## Potencjalne problemy do uniknięcia
@@ -118,9 +118,9 @@ Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w 
 <img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 9 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcia 12: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
-*Zdjęcia 10 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcia 13: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
   
 Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zestrojenia układu na częstotliwość 17.2kHz z przyłączoną anteną.
 
