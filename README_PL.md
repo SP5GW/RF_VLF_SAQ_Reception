@@ -153,11 +153,19 @@ Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DC
 Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny miniwhip:
 
 <p align="center">
-<img src="./img/antenna_comparison/miniwhip 2026-01-01 104612.png" width="400" height="300"/>
 <img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
+<img src="./img/antenna_comparison/miniwhip 2026-01-01 104612.png" width="400" height="300"/>
 </p>
 
+W moim przypadku, odbiór sygnałów w paśmie VLF oraz sygnału synchronizacji czasu DCF-77 był możliwy wyłącznie z wykorzystaniem przedwzmacniacza wraz z anteną pętlową. 
+
 # Podsumowanie
+
+Po roku przygotowań udało się odebrać sygnał stacji SAQ Grimeton. Oprócz samej satysfakcji z odbioru, projekt ten umożliwił mi zdobycie cennego doświadczenia oraz wymianę wiedzy z innymi pasjonatami fal bardzo długich.
+
+Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasłuchów w paśmie 10–250 kHz, opisane rozwiązanie może stanowić dobrą bazę do dalszych eksperymentów.
+
+73 Andrzej SP5GW
 
 <p align="center">
 <img src="./img/SAQTransmission.png" width="200" height="600"/>
