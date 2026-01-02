@@ -35,14 +35,16 @@ Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana
 <p align="center">
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
 </p>
-* Zdjęcia 3: Strona internetowa, która wylicza koordynaty lokalizacji o podanym adresie. *
+
+*Zdjęcia 3: Strona internetowa, która wylicza koordynaty lokalizacji o podanym adresie.*
 
 zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
 
 <p align="center">
 <img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
 </p>
-* Zdjęcia 4: Strona internetowa, która umożliwia storzenie mapy azymutów. *
+
+*Zdjęcia 4: Strona internetowa, która umożliwia storzenie mapy azymutów.*
   
 W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skutkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
 
@@ -55,7 +57,8 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <p align="center">
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
 </p>
-* Zdjęcia 4 Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania. *
+
+*Zdjęcia 4 Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
 
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
@@ -70,7 +73,8 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/IMG_2355.jpg" width="400" height="300"/>
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
-* Zdjęcia 5,6,7 Konstrukcja mechaniczna układu przedwzmacniacza. *
+
+*Zdjęcia 5,6,7 Konstrukcja mechaniczna układu przedwzmacniacza.*
 
 Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet z zakresu fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
 
@@ -83,20 +87,22 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 <p align="center">
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
 </p>
-* Zdjęcia 8 Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną. *
+
+*Zdjęcia 8 Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
 
 ### Preamplifier performance
 
 <p align="center">
 <img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
 </p>
-* Zdjęcia 8 Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych. *
+
+*Zdjęcia 8 Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych.*
 
 <p align="center">
 <img src="./img/preamp/Gain_measurement.png" width="600" height="600"/>
 </p>
 
-* Zdjęcia 8 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych. *
+*Zdjęcia 8 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
 
 ## Potencjalne problemy do uniknięcia
