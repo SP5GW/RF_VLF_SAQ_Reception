@@ -132,6 +132,31 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 <img src="./img/software_options/sdr_uno 2026-01-01 234807.png" width="600" height="400"/>
 </p>
 
+
+# Jakość odbioru a typ anteny
+
+Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym poziomie zakłóceń przemysłowych (zasilacze impulsowe, stacja transformatorowa oddalona od anten nie dalej niż o 80m, stacja bazowa telefonii komórkowej oddalona nie dalej niż o 100m). Uzyskane wyniki mogłyby być zupełnie inne dla obszaru wiejskiego.
+
+Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń zdecydowałem się na wykonanie pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
+
+## Wyniki dla anteny pętlowej
+
+Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny pętlowej z przyłączonym przedwzmacniaczem:
+
+<p align="center">
+<img src="./img/antenna_comparison/loop 2026-01-01 104826.png" width="400" height="300"/>
+<img src="./img/antenna_comparison/loop2026-01-01 104710.png" width="400" height="300"/>
+</p>
+
+## Wyniki dla anteny miniwhip
+
+Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny miniwhip:
+
+<p align="center">
+<img src="./img/antenna_comparison/miniwhip 2026-01-01 104612.png" width="400" height="300"/>
+<img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
+</p>
+
 # Podsumowanie
 
 <p align="center">
