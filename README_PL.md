@@ -139,10 +139,10 @@ Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym 
 
 Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
 
-Sposób zawiszenia porównywanych anten został pokazany na zdjęciu poniżej:
+Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej:
 
 <p align="center">
-<img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
+<img src="./img/antenna_comparison/AntennaLocation.jpg" width="400" height="300"/>
 </p>
 
 ## Wyniki dla anteny pętlowej
