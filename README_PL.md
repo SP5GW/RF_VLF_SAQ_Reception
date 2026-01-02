@@ -117,8 +117,10 @@ Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w 
 <img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
 <img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
 </p>
-* Zdjęcia 9 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych. *
-* Zdjęcia 10 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych. *
+
+*Zdjęcia 9 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+
+*Zdjęcia 10 Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
   
 Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zestrojenia układu na częstotliwość 17.2kHz z przyłączoną anteną.
 
