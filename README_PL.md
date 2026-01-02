@@ -46,7 +46,7 @@ W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierun
 
 ## Budowa przedwzmacniacza
 
-Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1]. W ramach tego projektu wprowadziłem następujące modyfikacje:
+Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1][6]. W ramach tego projektu wprowadziłem następujące modyfikacje:
 
 <p align="center">
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
@@ -139,6 +139,12 @@ Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym 
 
 Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
 
+Sposób zawiszenia porównywanych anten został pokazany na zdjęciu poniżej:
+
+<p align="center">
+<img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
+</p>
+
 ## Wyniki dla anteny pętlowej
 
 Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny pętlowej z przyłączonym przedwzmacniaczem:
@@ -174,5 +180,17 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 # Źródła
 
 [1] Stowarzyszenie Przyjaciół Aleksandra Grimetona, https://alexander.n.se/
-[2] Antena miniwhip, github.com/sp5gw
+
+[2] Antena miniwhip, https://github.com/SP5GW/MiniWhip_Antenna
+
 [3] SDR Play, https://www.sdrplay.com/
+
+[4] Oprogramowanie Spectrum lab autorstwa Wolfganga Bueschera, DL4YHF https://www.qsl.net/dl4yhf/spectra1.html
+
+[5] Ustawienia programu Spectrum Lab dla SAQ  https://www.qsl.net/dl4yhf/speclab/vlf_rcvr.htm
+
+[6] Opis przedwzmacniacza VLF, https://alexander.n.se/en/the-radio-station-saq-grimeton/lyssna-pa-saq/
+
+[7] Opis działania anteny pętlowej autorstwa Williama E. Paynea, N4YWK, http://www.vlf.it/octoloop/rlt-n4ywk.htm
+
+[8] Portal dla entuzjastów VLF, http://www.vlf.it/
