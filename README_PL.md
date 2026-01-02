@@ -16,7 +16,7 @@ Wyniki tego eksperymentu oraz wyzwania przed jakimi stanąłem w trakcie jego re
 <img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
 </p>
 
-*Zdjęcia 1 i 2: Konstrukcja mechaniczna anteny pętlowej. Indukcyjność anteny to 24.7mH a nie tak jak na rysunku 24.7nH!*
+*Zdjęcia 1,2: Konstrukcja mechaniczna anteny pętlowej. Indukcyjność anteny to 24.7mH a nie tak jak na rysunku 24.7nH!*
 
 Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSP1A z oprogramowaniem SDRUno [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
 
@@ -36,7 +36,7 @@ Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
 </p>
 
-*Zdjęcia 3: Strona internetowa, która wylicza koordynaty lokalizacji o podanym adresie.*
+*Zdjęcie 3: Strona internetowa, która wylicza koordynaty lokalizacji o podanym adresie.*
 
 zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
 
@@ -44,7 +44,7 @@ zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą m
 <img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
 </p>
 
-*Zdjęcia 4: Strona internetowa, która umożliwia storzenie mapy azymutów.*
+*Zdjęcie 4: Strona internetowa, która umożliwia storzenie mapy azymutów.*
   
 W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skutkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
 
@@ -58,7 +58,7 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
 </p>
 
-*Zdjęcia 5: Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
+*Zdjęcie 5: Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
 
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
@@ -88,7 +88,7 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 9: Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
+*Zdjęcie 9: Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
 
 ### Preamplifier performance
 
@@ -96,13 +96,13 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 <img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 10: Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych.*
+*Zdjęcie 10: Pasmo przenoszenia przedwzmacniacza wyznaczone na podstawie rzeczywistych danych pomiarowych.*
 
 <p align="center">
 <img src="./img/preamp/Gain_measurement.png" width="600" height="600"/>
 </p>
 
-*Zdjęcia 11: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcie 11: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
 
 ## Potencjalne problemy do uniknięcia
@@ -118,15 +118,17 @@ Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w 
 <img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
 </p>
 
-*Zdjęcia 12: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcie 12: Od lewej: Widmo sygnału z widocznym przesunięciem "w dół" pasma przenoszenia obwodu wejściowego względem markera SAQ 17.2kHz. Kondensator w obwodzie rezonansowym posiada wartość 8.2nF + 22nF*
 
-*Zdjęcia 13: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
+*Zdjęcie 13: Symulacja w LTSpice przypadku ze Zdjęcia 12*
   
 Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zestrojenia układu na częstotliwość 17.2kHz z przyłączoną anteną.
 
 <p align="center">
 <img src="./meas/_30dBmInputSignal_Decimation32_2n2_SDR_Uno.png" width="400" height="300"/>
 </p>
+
+*Zdjęcie 14: Widmo sygnału z prawidłowo zestrojonym obwodem wejściowym (marker SAQ 17.2kHz umieszczony centralnie w paśmie przenoszenia obwodu wejściowego). Kondensator w obwodzie rezonansowym posiada wartość 8.2nF*
 
 Podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość.
 
@@ -139,11 +141,15 @@ W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdził
 <img src="./img/software_options/saqrx 2026-01-01 235010.png" width="400" height="300"/>
 </p>
 
+*Zdjęcie 15: Odbiór sygnałów VLF przy pomocy programu SAQrx (wyjście przedwzmacniacze jest podłączone do wejścia liniowego karty dźwiękowej komputera)*
+
 oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF rekomendowane przez Jacka SQ5BPF:
 
 <p align="center">
 <img src="./img/software_options/spectrum_lab 2026-01-01 234459.png" width="600" height="400"/>
 </p>
+
+*Zdjęcie 16: Odbiór sygnałów VLF przy pomocy programu Spectrum Lab (wyjście przedwzmacniacze jest podłączone do wejścia liniowego karty dźwiękowej komputera)*
 
 Zaletą pakietu spectrumlab jest dostępność funkcji wodospadu.
 
@@ -153,6 +159,7 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 <img src="./img/software_options/sdr_uno 2026-01-01 234807.png" width="600" height="400"/>
 </p>
 
+*Zdjęcie 17: Odbiór sygnałów VLF przy pomocy programu SDRUno (wyjście przedwzmacniacze jest podłączone do wejścia antenowego odbiornika SDR RSP1A firmy SDRPlay)*
 
 # Jakość odbioru a typ anteny
 
@@ -160,11 +167,13 @@ Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym 
 
 Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
 
-Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej:
+Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej. Do testów wykorzystano antenę miniwhip konstrukcji Anton Gavrilova, RA0SMS, o porównywalnych parametrach do klasycznego miniwhip'a opracowanego przez Nico Veth'a PA0NHC.
 
 <p align="center">
 <img src="./img/antenna_comparison/AntennaLocation.jpg" width="400" height="300"/>
 </p>
+
+*Zdjęcie 18: Lokalizacja porównywanych anten*
 
 ## Wyniki dla anteny pętlowej
 
@@ -175,6 +184,8 @@ Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DC
 <img src="./img/antenna_comparison/loop2026-01-01 104710.png" width="400" height="300"/>
 </p>
 
+*Zdjęcia 19,20: Od lewej: Widmo sygnału dla pasma VLF oraz częstotliwości DCF-77. W obydwu przypadkach do odbioru wykorzystywana jest antena pętlowa.*
+
 ## Wyniki dla anteny miniwhip
 
 Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny miniwhip:
@@ -183,6 +194,8 @@ Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DC
 <img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
 <img src="./img/antenna_comparison/miniwhip 2026-01-01 104612.png" width="400" height="300"/>
 </p>
+
+*Zdjęcia 21,22: Od lewej: Widmo sygnału dla pasma VLF oraz częstotliwości DCF-77. W obydwu przypadkach do odbioru wykorzystywana jest antena miniwhip.*
 
 W moim przypadku, odbiór sygnałów w paśmie VLF oraz sygnału synchronizacji czasu DCF-77 był możliwy wyłącznie z wykorzystaniem przedwzmacniacza wraz z anteną pętlową. 
 
@@ -197,6 +210,9 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 <p align="center">
 <img src="./img/SAQTransmission.png" width="200" height="600"/>
 </p>
+
+*Zdjęcia 23: Odebrany sygnał SAQ 17.2kHz zobrazowany w programie Spectrum Lab*
+
 
 # Źródła
 
