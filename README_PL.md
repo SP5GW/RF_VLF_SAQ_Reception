@@ -211,7 +211,7 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 <img src="./img/SAQTransmission.png" width="200" height="600"/>
 </p>
 
-*Zdjęcia 23: Odebrany sygnał SAQ 17.2kHz zobrazowany w programie Spectrum Lab*
+*Zdjęcie 23: Odebrany sygnał SAQ 17.2kHz zobrazowany w programie Spectrum Lab*
 
 
 # Źródła
