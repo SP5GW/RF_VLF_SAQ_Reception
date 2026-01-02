@@ -16,9 +16,9 @@ Wyniki tego eksperymentu oraz wyzwania przed jakimi stanąłem w trakcie jego re
 <img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
 </p>
 
-Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSPA1A z oprogramowaniem SDRPlay [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
+Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSP1A z oprogramowaniem SDRUno [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
 
-Zagłębiając się w tematykę odbioru sygnałów VLF można zauważyć, że optymalnym typem anteny dla tych długości fal jest antena pętlowa, która reaguje na składową magnetyczną fali radiowej. Antena miniwhip, którą wykorzystałem podczas nieudanej próby reaguje z kolei na składową elektryczną i dlatego wykazuje dużą wrażliwość na zakłócenia przemysłowe (którego źrodłem mogą być stacje transformatorowe, zasilacze impulsowe itp.). Ponadto magnetyczna antena pętlowa cechuje się dużą kierunkowością co pomaga w zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła nieporzadanej emisji. 
+Zagłębiając się w tematykę odbioru sygnałów VLF można zauważyć, że najbardziej popularnymi typami anten dla tych długości fal są antena pętlowa i antena miniwhip. Antena pętlowa reaguje na składową magnetyczną fali radiowej co czyni ją bardziej odporną na zakłócenia przemysłowe, ponadto magnetyczna antena pętlowa cechuje się dużą kierunkowością co pomaga w zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła nieporzadanej emisji. Antena miniwhip, którą wykorzystałem podczas nieudanej próby reaguje z kolei na składową elektryczną i dlatego wykazuje dużą wrażliwość na zakłócenia przemysłowe (których źrodłem mogą być np. stacje transformatorowe lub zasilacze impulsowe).  
 
 Antenę pętlową zbudowałem na ramie drewnianej w kształcie kwadratu o boku 80cm. Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [4] przymocowane do drewnianej ramy (indukcyjność: 2.45mH, rezystancja: 68 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
 
@@ -40,7 +40,7 @@ zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą m
 <img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
 </p>
 
-W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skótkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
+W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skutkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
 
 # Przedwzmacniacz
 
@@ -66,13 +66,13 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 <img src="./img/preamp/IMG_2357.jpg" width="400" height="300"/>
 </p>
 
-Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
+Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet z zakresu fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
 
 ## Strojenie przedwzmacniacza
 
 Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane użycie specjalistycznej aparatury pomiarowej. Oczywiście możliwe jest wykorzystanie generatora funkcyjnego oraz oscyloskopu, jednak wystarczającą dokładność zapewnia obserwacja poziomu wzmocnienia szumów tła pochodzących z wejścia przedwzmacniacza pozostawionego bez podłączonej anteny. Jeżeli maksimum poziomu szumów występuje w pobliżu częstotliwości SAQ, można uznać, że układ został prawidłowo zestrojony. Należy przy tym uwzględnić, że obwód rezonansowy charakteryzuje się stosunkowo wąskim pasmem przenoszenia — w przedstawionej implementacji wynoszącym około 200 Hz — co wymaga dość precyzyjnego dostrojenia układu.
 
-W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa nie połączone ze sobą kable o długości ok. 10-15cm) znajdującego się w pobliżu przedwzmacniacza lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
+W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie w wyniku przełączania źródła sygnału pomiędzy generatorem a anteną. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa niepołączone ze sobą kable o długości ok. 10-15cm) znajdującego się w pobliżu przedwzmacniacza lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
 
 <p align="center">
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
@@ -90,11 +90,11 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 
 ## Potencjalne problemy do uniknięcia
 
-1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF.
+1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF (tak straciłem jeden z układów na kilka dni przed planowaną emisją...)
 
 2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza  prowadzi do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu w porównaniu do sytuacji, w której obciążeniem uzwojenia pierwotnego jest antena. Jest to podyktowane faktem, że impedancja uzwojenia pierwotnego z szeregowo przyłączoną niską impedancją generatora sygnałowego (o charakterze mocno rezystancyjnym) istotnie wpływa na reaktancję obwodu rezansowego, podwyższając jego częstotliwość rezonansową. 
  
-Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w celu uzyskania maksimum wzmocnienia przy częstotliwości 17,2 kHz przy podłączonym generatorze, do kondensatora C2 (8,2 nF) dołączyłem równolegle dodatkowy kondensator o pojemności 22 nF. Jak jednak pokazuje przedstawiona poniżej symulacja oraz potwierdzają wyniki pomiarów, po odłączeniu generatora i zastąpieniu go anteną rzeczywista częstotliwość rezonansowa obwodu ulegała istotnemu obniżeniu.
+Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w celu uzyskania maksimum wzmocnienia przy częstotliwości 17,2 kHz przy podłączonym generatorze, do kondensatora C2 (8,2 nF) dołączyłem równolegle dodatkowy kondensator o pojemności 22 nF. Jak jednak pokazuje przedstawiona poniżej symulacja oraz potwierdzają wyniki pomiarów, po odłączeniu generatora i zastąpieniu go anteną, rzeczywista częstotliwość rezonansowa obwodu ulegała istotnemu obniżeniu.
 
 <p align="center">
 <img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
@@ -107,7 +107,7 @@ Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zes
 <img src="./meas/_30dBmInputSignal_Decimation32_2n2_SDR_Uno.png" width="400" height="300"/>
 </p>
 
-Należy dodać, że podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość.
+Podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość.
 
 # Oprogramowanie
 
@@ -118,7 +118,7 @@ W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdził
 <img src="./img/software_options/saqrx 2026-01-01 235010.png" width="400" height="300"/>
 </p>
 
-oraz oprgramwanie spectrumlab autorstwa Wolfganga Bueschera, DL4YHF rekomendowane przez Jacka SQ5BPF:
+oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF rekomendowane przez Jacka SQ5BPF:
 
 <p align="center">
 <img src="./img/software_options/spectrum_lab 2026-01-01 234459.png" width="600" height="400"/>
@@ -126,7 +126,7 @@ oraz oprgramwanie spectrumlab autorstwa Wolfganga Bueschera, DL4YHF rekomendowan
 
 Zaletą pakietu spectrumlab jest dostępność funkcji wodospadu.
 
-W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bardzo zależny od wykorzystywanej platformy sprzętowej. W przypadku SDRUno RSP1A, najepszym wyborem wydaje się oprogramowanie rozwijane przez dostawcę sprzętu czyli program SDRPlay.
+W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bardzo zależny od wykorzystywanej platformy sprzętowej. W przypadku RSP1A, najepszym wyborem wydaje się oprogramowanie rozwijane przez dostawcę sprzętu czyli program SDRUno.
 
 <p align="center">
 <img src="./img/software_options/sdr_uno 2026-01-01 234807.png" width="600" height="400"/>
@@ -137,7 +137,7 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 
 Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym poziomie zakłóceń przemysłowych (zasilacze impulsowe, stacja transformatorowa oddalona od anten nie dalej niż o 80m, stacja bazowa telefonii komórkowej oddalona nie dalej niż o 100m). Uzyskane wyniki mogłyby być zupełnie inne dla obszaru wiejskiego.
 
-Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
+Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
 
 ## Wyniki dla anteny pętlowej
 
