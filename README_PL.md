@@ -137,7 +137,7 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 
 Niniejsze porównanie zostało wykonane w obszarze miejskim o stosunkowo silnym poziomie zakłóceń przemysłowych (zasilacze impulsowe, stacja transformatorowa oddalona od anten nie dalej niż o 80m, stacja bazowa telefonii komórkowej oddalona nie dalej niż o 100m). Uzyskane wyniki mogłyby być zupełnie inne dla obszaru wiejskiego.
 
-Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń zdecydowałem się na wykonanie pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
+Ponieważ wielu z nas mieszka w miejscach o zbliżonym poziomie zakłóceń zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz miniwhip znajdujących się w niewielkiej odległości od siebie.
 
 ## Wyniki dla anteny pętlowej
 
