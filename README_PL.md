@@ -2,7 +2,7 @@
 <img src="./img/IMG_2358.jpg" width="800" height="600"/>
 </p> 
 
-# **Odbiór Sygnału radiostacji SAQ, Grimeton 17.2kHz oraz innych stacji w paśmie VLF.**
+# **Odbiór Sygnału radiostacji VLF SAQ, Grimeton 17.2kHz.**
 
 # Wprowadzenie
 Pomysł przeprowadzenia odbioru sygnału emitowanego przez szwedzką stację SAQ nadającą spod Geteborga pojawił się przed ponad rokiem. Gdy pierwsza próba odbioru z wykorzystaniem anteny aktywnej miniwhip zakończyła się niepowodzeniem, postanowiłem spróbować ponwnie, ale tym razem wykorzystując przedwzmacniacz opisany na stronach Towarzystwka Przyjaciół Grimeton SAQ [1] w połączeniu z anteną magnetyczną.
