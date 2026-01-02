@@ -15,6 +15,7 @@ Wyniki tego eksperymentu oraz wyzwania przed jakimi stanąłem w trakcie jego re
 <img src="./img/antenna/IMG_2331.jpg" width="400" height="300"/>
 <img src="./img/antenna/IMG_2336.jpg" width="400" height="300"/>
 </p>
+
 *Zdjęcia 1 i 2: Konstrukcja mechaniczna anteny pętlowej. Indukcyjność anteny to 24.7mH a nie tak jak na rysunku 24.7nH!*
 
 Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSP1A z oprogramowaniem SDRUno [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
