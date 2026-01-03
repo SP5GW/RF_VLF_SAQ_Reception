@@ -22,9 +22,9 @@ Wyniki tego eksperymentu oraz wyzwania przed jakimi stanąłem w trakcie jego re
 
 Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywną typu miniwhip podłączoną do odbiornika RSP1A z oprogramowaniem SDRUno [3] konstrukcja tej anteny została opisana w [2], w moim przypadku poziom zakłóceń całkowicie uniemożliwił odbiór sygnałów SAQ czy DCF-77 mimo, że na pasmach amatorskich 80m i 40m antena sprawowała się znakomicie. Dodawanie tłumików prądów błądzących czy poprawa jakości uziemienia stacji odbiorczej nie przyniosły znaczącej poprawy. 
 
-Śledząc tematykę odbioru sygnałów VLF można zauważyć, że najbardziej popularnymi typami anten dla tych długości fal są anteny pętlowe i miniwhip. Antena pętlowa reaguje na składową magnetyczną fali radiowej co czyni ją bardziej odporną na zakłócenia przemysłowe, ponadto magnetyczna antena pętlowa cechuje się dużą kierunkowością co pomaga w zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła nieporzadanej emisji. Antena miniwhip, którą wykorzystałem podczas nieudanej próby reaguje z kolei na składową elektryczną i dlatego wykazuje dużą wrażliwość na zakłócenia przemysłowe (których źrodłem mogą być np. stacje transformatorowe lub zasilacze impulsowe).  
+Śledząc tematykę odbioru sygnałów VLF można zauważyć, że najbardziej popularnymi typami anten dla tych długości fal są anteny pętlowe [7][15] i miniwhip. Antena pętlowa reaguje na składową magnetyczną fali radiowej co czyni ją bardziej odporną na zakłócenia przemysłowe, ponadto magnetyczna antena pętlowa cechuje się dużą kierunkowością co pomaga w zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła nieporzadanej emisji. Antena miniwhip, którą wykorzystałem podczas nieudanej próby reaguje z kolei na składową elektryczną i dlatego wykazuje dużą wrażliwość na zakłócenia przemysłowe (których źrodłem mogą być np. stacje transformatorowe lub zasilacze impulsowe).  
 
-Antenę pętlową zbudowałem na ramie drewnianej w kształcie kwadratu o boku 80cm. Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 2.45mH, rezystancja: 68 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
+Antenę pętlową zbudowałem na ramie drewnianej w kształcie prostokąta o bokach 80 i 84cm (grubość deski 2cm, krótszy bok zawieszony równolegle do ziemi). Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 24.7mH, rezystancja: 68 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
 
 Warto też wspomnieć, że wybór pomiędzy anteną pętlową a aktywną anteną miniwhip w dużej mierze zależy od warunków panujących w danej lokalizacji. W przypadku obszarów miejskich o potencjalnie dużym poziomie zakłóceń przemysłowych bardziej optymalnym wyborem wydaje się być antena pętlowa. W warunkach wiejskich antena miniwhip ze względu na wysoką czułość oraz niski poziom zakłóceń występujących w takim środowisku może być znakomitym wyborem.
 
@@ -54,7 +54,7 @@ W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierun
 
 ## Budowa przedwzmacniacza
 
-Konstrukcja przedwzmacniacza opiera się o podwójny wzmacniacz operacyjny firmy Analog Devices AD8397 [14] i została opisana na stronach Towarzystwka Przyjaciół Grimeton SAQ [1][6]. 
+Konstrukcja przedwzmacniacza jest oparta o podwójny wzmacniacz operacyjny firmy Analog Devices AD8397 [14] i została opisana na stronach Towarzystwka Przyjaciół Grimeton SAQ [1][6]. 
 
 <p align="center">
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
@@ -79,7 +79,7 @@ W ramach tego projektu wprowadziłem następujące modyfikacje:
 
 *Zdjęcia 6,7,8: Konstrukcja mechaniczna układu przedwzmacniacza.*
 
-Intuicja sugeruje, że przedwzmacniacz powinien być umieszczony możliwie najbliżej anteny i połączony z nią jak najkrótszym przewodem. W przeprowadzonych przeze mnie testach długość kabla łączącego antenę z przedwzmacniaczem oraz jego odległość od anteny nie miały jednak zauważalnego wpływu na jakość odbioru.
+Intuicja sugeruje, że przedwzmacniacz powinien być umieszczony możliwie najbliżej anteny i połączony z nią jak najkrótszym przewodem. W przeprowadzonych przeze mnie testach długość kabla łączącego antenę z przedwzmacniaczem oraz odległość przedwzmacniacza od anteny nie miały jednak zauważalnego wpływu na jakość odbioru.
 
 ## Strojenie przedwzmacniacza
 
@@ -249,4 +249,6 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 
 [13] Portal umożliwiający generowanie map azymutowych autorstwa Thomasa Epperly, NS6T, https://ns6t.net/azimuth/
 
-[14] AD8397 Datasheet including LTSpice model, https://www.analog.com/en/products/ad8397.html
+[14] Nota katalogowa układau AD8397 oraz model LTSpice, https://www.analog.com/en/products/ad8397.html
+
+[15] Praktyczny opis budowy strojonej anteny magnetycznej, https://physicsopenlab.org
