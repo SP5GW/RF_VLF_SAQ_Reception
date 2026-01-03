@@ -2,7 +2,7 @@
 <img src="./img/IMG_2358.jpg" width="800" height="600"/>
 </p> 
 
-# **Odbiór Sygnału radiostacji VLF SAQ, Grimeton 17.2kHz.**
+# **Odbiór sygnału radiostacji VLF SAQ, Grimeton 17.2kHz.**
 
 # Wprowadzenie
 Pomysł przeprowadzenia odbioru sygnału emitowanego przez szwedzką stację SAQ nadającą spod Geteborga pojawił się przed ponad rokiem. Gdy pierwsza próba odbioru z wykorzystaniem anteny aktywnej miniwhip zakończyła się niepowodzeniem, postanowiłem spróbować ponwnie, ale tym razem wykorzystując przedwzmacniacz opisany na stronach Towarzystwka Przyjaciół Grimeton SAQ [1] w połączeniu z anteną magnetyczną.
@@ -28,11 +28,11 @@ Antenę pętlową zbudowałem na ramie drewnianej w kształcie kwadratu o boku 8
 
 Warto też wspomnieć, że wybór pomiędzy anteną pętlową a aktywną anteną miniwhip w dużej mierze zależy od warunków panujących w danej lokalizacji. W przypadku obszarów miejskich o potencjalnie dużym poziomie zakłóceń przemysłowych bardziej optymalnym wyborem wydaje się być antena pętlowa. W warunkach wiejskich antena miniwhip ze względu na wysoką czułość oraz niski poziom zakłóceń występujących w takim środowisku może być znakomitym wyborem.
 
-W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny miniwhip jest jak najbardziej możliwy, oczywiście przy założeniu niskiego poziomu zakłóceń wstępujących w danej lokalizacji (przypadek Jacka SP5PBE, który z powodzeniem wykorzystuje antenę miniwhip).
+W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny miniwhip jest jak najbardziej możliwy, oczywiście przy założeniu niskiego poziomu zakłóceń wstępujących w miejscu odbioru (przypadek Jacka SP5PBE, który z powodzeniem wykorzystuje ten rodzaj anteny.
 
 ## Orientacja Anteny względem radiostacji SAQ
 
-Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgróbnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętajmy o odznaczeniu opcji "true north" jeśli taka opcja występuje w naszej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [4], 
+Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgrubnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętajmy o odznaczeniu opcji "true north" jeśli taka możliwość występuje w naszej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [4], 
 
 <p align="center">
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
@@ -48,13 +48,13 @@ zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą m
 
 *Zdjęcie 4: Strona internetowa, która umożliwia storzenie mapy azymutów.*
   
-W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie, które skutkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
+W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie anteny, które skutkuje najwyższym współczynikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału porządanego.
 
 # Przedwzmacniacz
 
 ## Budowa przedwzmacniacza
 
-Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjaciół Aleksandra Grimetona [1][6]. W ramach tego projektu wprowadziłem następujące modyfikacje:
+Konstrukcja przedwzmacniacza została opisana na stronach Towarzystwka Przyjaciół Grimeton SAQ [1][6]. 
 
 <p align="center">
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
@@ -62,11 +62,12 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 
 *Zdjęcie 5: Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
 
+W ramach tego projektu wprowadziłem następujące modyfikacje:
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
-3) Dodano wyjście sma-c w celu łatwiejszego przyłącznia odbiornika SDR takiego jak np. RSP1A [3], w przypadku współpracy przedwzmacniacza z odbiornikiem SDR nie jest wymagany dodatkowy tłumik sygnału, Funkcję tę realizuje filtr górnoprzepustowy utworzony przez elementy C10 (100 nF) oraz rezystor R9 (1 kΩ), pracujący z równoległym obciążeniem w postaci impedancji wejściowej odbiornika SDR (50 Ω). Po dołączeniu odbiornika SDR, charakteryzującego się znacznie niższą impedancją wejściową niż wejście liniowe karty dźwiękowej komputera PC, częstotliwość graniczna filtru ulega przesunięciu w kierunku niższych częstotliwości, co skutkuje efektywnym obniżeniem poziomu sygnału doprowadzanego do obciążenia o około 10 dB.
+3) Dodano wyjście sma-c w celu łatwiejszego przyłącznia odbiornika SDR takiego jak np. RSP1A [3], w przypadku współpracy przedwzmacniacza z odbiornikiem SDR nie jest wymagany dodatkowy tłumik sygnału, Funkcję tę realizuje filtr górnoprzepustowy utworzony przez elementy C10 (100 nF) oraz rezystor R9 (1 kΩ). Częstotliwość graniczna tego filtra ulega przesunięciu w kierunku niższych częstotliwości w wyniku przyłączenia odbiornika SDR, którego impedancja wejściowa jest dużo niższa od rezystancji R9 (oraz impedancji wejściowej karty dźwiękowej). W efekcie dla pasma VLF poziom sygnału wyjściowego z przedwzmacniacza obniża się o około 10dB w stosunku do odbioru z wykorzystaniem karty dźwiękowej.
 4) Baterie 4V zastąpiono bardziej dostępnymi bateriami 9V.
-5) Dodano proste układy monitorujące stan baterii oparte o tranzystor BC546 oraz diody zabezpieczające przed niewłaściwą polaryzacją. W przypadku obniżenia napięcia zasilania poniżej 8,11V kolor diod LED D3/D4 zmienia się z zielonego na czerwony.
+5) Dodano proste układy monitorujące stan baterii oparte o tranzystor BC546 oraz diody zabezpieczające przed niewłaściwą polaryzacją. W przypadku obniżenia napięcia zasilania poniżej 8,11V kolor diod LED D3/D4 zmienia się z zielonego na czerwony. Wykorzystany układ monitorujący jest modyfikacją rozwiązania opisanego przez Einara Abella na portalu EDN [9].
 
 <p align="center">
 <img src="./img/preamp/IMG_2328.jpg" width="800" height="600"/>
@@ -78,13 +79,11 @@ Konstrukcja przedwzmacniacza została opisana na stronach Stowarzyszenia Przyjac
 
 *Zdjęcia 6,7,8: Konstrukcja mechaniczna układu przedwzmacniacza.*
 
-Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet z zakresu fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m) czy miniwhip.
-
 ## Strojenie przedwzmacniacza
 
-Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane użycie specjalistycznej aparatury pomiarowej. Oczywiście możliwe jest wykorzystanie generatora funkcyjnego oraz oscyloskopu, jednak wystarczającą dokładność zapewnia obserwacja poziomu wzmocnienia szumów tła pochodzących z wejścia przedwzmacniacza pozostawionego bez podłączonej anteny. Jeżeli maksimum poziomu szumów występuje w pobliżu częstotliwości SAQ, można uznać, że układ został prawidłowo zestrojony. Należy przy tym uwzględnić, że obwód rezonansowy charakteryzuje się stosunkowo wąskim pasmem przenoszenia — w przedstawionej implementacji wynoszącym około 200 Hz — co wymaga dość precyzyjnego dostrojenia układu.
+Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane użycie specjalistycznej aparatury pomiarowej. Oczywiście możliwe jest wykorzystanie generatora funkcyjnego oraz oscyloskopu, jednak wystarczającą dokładność zapewnia obserwacja poziomu wzmocnienia szumów tła pochodzących z wejścia przedwzmacniacza pozostawionego bez podłączonej anteny. Jeżeli maksimum poziomu szumów występuje w pobliżu częstotliwości SAQ, można uznać, że układ został prawidłowo zestrojony. Należy przy tym uwzględnić, że obwód rezonansowy charakteryzuje się stosunkowo wąskim pasmem przenoszenia — w przedstawionej implementacji wynoszącym około 210 Hz — co wymaga dość precyzyjnego dostrojenia układu.
 
-W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie w wyniku przełączania źródła sygnału pomiędzy generatorem a anteną. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa niepołączone ze sobą kable o długości ok. 10-15cm) znajdującego się w pobliżu przedwzmacniacza lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
+W przypadku strojenia przy użyciu generatora funkcjnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie w wyniku przełączania źródła sygnału pomiędzy generatorem a anteną. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa niepołączone ze sobą kable o długości ok. 10-15cm, generator musi znajdować się w pobliżu przedwzmacniacza)  lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
 
 <p align="center">
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
@@ -106,21 +105,25 @@ W przypadku strojenia przy użyciu generatora funkcjonalnego należy pamiętać 
 
 *Zdjęcie 11: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
+Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszwenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstatliwościach nawet z zakresu fal długich. Prezentowany układ pozwalił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60khz) oraz DCF-77 (77.5kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu miniwhip czy "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m).
 
 ## Potencjalne problemy do uniknięcia
 
 1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF (tak straciłem jeden z układów na kilka dni przed planowaną emisją...)
 
 2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza  prowadzi do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu w porównaniu do sytuacji, w której obciążeniem uzwojenia pierwotnego jest antena. Jest to podyktowane faktem, że impedancja uzwojenia pierwotnego z szeregowo przyłączoną niską impedancją generatora sygnałowego (o charakterze mocno rezystancyjnym) istotnie wpływa na reaktancję obwodu rezansowego, podwyższając jego częstotliwość rezonansową. 
- 
+
 Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w celu uzyskania maksimum wzmocnienia przy częstotliwości 17,2 kHz przy podłączonym generatorze, do kondensatora C2 (8,2 nF) dołączyłem równolegle dodatkowy kondensator o pojemności 22 nF. Jak jednak pokazuje przedstawiona poniżej symulacja oraz potwierdzają wyniki pomiarów, po odłączeniu generatora i zastąpieniu go anteną, rzeczywista częstotliwość rezonansowa obwodu ulegała istotnemu obniżeniu.
 
 <p align="center">
 <img src="./meas/_30dBmInputSignal_Decimation32_34_2nF_SDR_Uno.png" width="400" height="300"/>
-<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
 </p>
 
-*Zdjęcie 12: Od lewej: Widmo sygnału z widocznym przesunięciem "w dół" pasma przenoszenia obwodu wejściowego względem markera SAQ 17.2kHz. Kondensator w obwodzie rezonansowym posiada wartość 8.2nF + 22nF*
+*Zdjęcie 12: Widmo sygnału z widocznym przesunięciem "w dół" pasma przenoszenia obwodu wejściowego względem markera SAQ 17.2kHz. Kondensator w obwodzie rezonansowym posiada wartość 8.2nF + 22nF*
+
+<p align="center">
+<img src="./img/measurement_issue/measurement_issue.png" width="600" height="400"/>
+</p>
 
 *Zdjęcie 13: Symulacja w LTSpice przypadku ze Zdjęcia 12*
   
@@ -132,7 +135,7 @@ Usunięcie dodatkowego kondensatora 22nF, pozwoliło na uzyskanie poprawnego zes
 
 *Zdjęcie 14: Widmo sygnału z prawidłowo zestrojonym obwodem wejściowym (marker SAQ 17.2kHz umieszczony centralnie w paśmie przenoszenia obwodu wejściowego). Kondensator w obwodzie rezonansowym posiada wartość 8.2nF*
 
-Podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość.
+Podczas testów sygnał SAQ był symulowany przez nośną z generatora sygnałowego do którego wyjścia przyłączony został przewód pełniący rolę prostej anteny. Poziom sygnału wyjściowego generatora w tym scenariouszu testowym był ustawiony na maksymalną wartość, a generator znajdował się w bezpośrednim sąsiedztwie przedwzmacniacza.
 
 # Oprogramowanie
 
@@ -145,7 +148,7 @@ W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdził
 
 *Zdjęcie 15: Odbiór sygnałów VLF przy pomocy programu SAQrx (wyjście przedwzmacniacze jest podłączone do wejścia liniowego karty dźwiękowej komputera)*
 
-oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF rekomendowane przez Jacka SQ5BPF:
+oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF:
 
 <p align="center">
 <img src="./img/software_options/spectrum_lab 2026-01-01 234459.png" width="600" height="400"/>
@@ -153,7 +156,7 @@ oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF rekomendowa
 
 *Zdjęcie 16: Odbiór sygnałów VLF przy pomocy programu Spectrum Lab (wyjście przedwzmacniacze jest podłączone do wejścia liniowego karty dźwiękowej komputera)*
 
-Zaletą pakietu spectrumlab jest dostępność funkcji wodospadu.
+Zaletą pakietu Spectrum Lab jest dostępność funkcji wodospadu.
 
 W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bardzo zależny od wykorzystywanej platformy sprzętowej. W przypadku RSP1A, najepszym wyborem wydaje się oprogramowanie rozwijane przez dostawcę sprzętu czyli program SDRUno.
 
@@ -162,6 +165,8 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 </p>
 
 *Zdjęcie 17: Odbiór sygnałów VLF przy pomocy programu SDRUno (wyjście przedwzmacniacze jest podłączone do wejścia antenowego odbiornika SDR RSP1A firmy SDRPlay)*
+
+Jeśli zależy nam na maksymalnym obniżeniu poziomu zakłóceń w miejscu odbioru, wówczas należałoby rozważyć zastąpienie komputera PC oraz odbiornika SDR dobrej jakości dyktafonem z wejściem liniowym oraz wysoką częstotliwością próbkowania takim jak np.: Zoom H1 Essential [10].
 
 # Jakość odbioru a typ anteny
 
@@ -233,3 +238,7 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 [7] Opis działania anteny pętlowej autorstwa Williama E. Paynea, N4YWK, http://www.vlf.it/octoloop/rlt-n4ywk.htm
 
 [8] Portal dla entuzjastów VLF, http://www.vlf.it/
+
+[9] Układ monitorowania zasilania, Einar Abell, EDN 2 Marca 2015, https://www.edn.com/voltage-indicator-transitions-between-colours/
+
+[10] Strona producenta Zoom, https://www.zoom-europe.com/pl/podreczne-dyktafony/zoom-h1e
