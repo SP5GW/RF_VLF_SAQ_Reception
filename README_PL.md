@@ -54,7 +54,7 @@ W sytuacji gdy w naszej lokalizacji wystęuje silne źródło zakłóceń kierun
 
 ## Budowa przedwzmacniacza
 
-Konstrukcja przedwzmacniacza została opisana na stronach Towarzystwka Przyjaciół Grimeton SAQ [1][6]. 
+Konstrukcja przedwzmacniacza opiera się o podwójny wzmacniacz operacyjny firmy Analog Devices AD8397 [14] i została opisana na stronach Towarzystwka Przyjaciół Grimeton SAQ [1][6]. 
 
 <p align="center">
 <img src="./img/preamp/preamp_schematics.jpeg" width="800" height="600"/>
@@ -114,7 +114,6 @@ Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza
 1) Brak kondensatorów odsprzęgających może skutkować wzbudzaniem się układu wzmacniaczy operacyjnych co w skrajnym przywadku może doprowadzić nawet do ich uszkodzenia w skótek przegrzania się. Efekt może występować poza zakresem częstotliwości VLF i nie być bezpośrednio widocznym na osyloskopie czy wodospadzie odbiornika SDR ustawionego na monitorowanie częstotliwości VLF (tak straciłem jeden z układów na kilka dni przed planowaną emisją...)
 
 2) Strojenie za pomocą generatora funkcyjnego bezpośrednio przyłączonego do układu wejściowego przedwzmacniacza  prowadzi do zmiany charakterystyki obwodu i w efekcie przesunięcia częstotliwości rezonansu w porównaniu do sytuacji, w której obciążeniem uzwojenia pierwotnego jest antena. Jest to podyktowane faktem, że impedancja uzwojenia pierwotnego z szeregowo przyłączoną niską impedancją generatora sygnałowego (o charakterze mocno rezystancyjnym) istotnie wpływa na reaktancję obwodu rezansowego, podwyższając jego częstotliwość rezonansową. 
-
 Początkowo nie byłem świadomy występowania tego zjawiska. W konsekwencji, w celu uzyskania maksimum wzmocnienia przy częstotliwości 17,2 kHz przy podłączonym generatorze, do kondensatora C2 (8,2 nF) dołączyłem równolegle dodatkowy kondensator o pojemności 22 nF. Jak jednak pokazuje przedstawiona poniżej symulacja oraz potwierdzają wyniki pomiarów, po odłączeniu generatora i zastąpieniu go anteną, rzeczywista częstotliwość rezonansowa obwodu ulegała istotnemu obniżeniu.
 
 <p align="center">
@@ -150,7 +149,7 @@ W przypadku odbioru z wykorzystaniem karty dźwiękowej bardzo dobrze sprawdził
 
 *Zdjęcie 15: Odbiór sygnałów VLF przy pomocy programu SAQrx (wyjście przedwzmacniacze jest podłączone do wejścia liniowego karty dźwiękowej komputera)*
 
-oraz oprgramwanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF:
+oraz oprogramowanie Spectrum Lab autorstwa Wolfganga Bueschera, DL4YHF:
 
 <p align="center">
 <img src="./img/software_options/spectrum_lab 2026-01-01 234459.png" width="600" height="400"/>
@@ -245,8 +244,10 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 
 [10] Strona producenta Zoom, https://www.zoom-europe.com/pl/podreczne-dyktafony/zoom-h1e
 
-[11] zawieszki
+[11] Uchwyt mini do opasek kablowych przykręcany, 
 
 [12] Portal umożliwiający odszukanie koordynat danej lokalizacji,  https://www.gps-coordinates.net/
 
 [13] Portal umożliwiający generowanie map azymutowych autorstwa Thomasa Epperly, NS6T, https://ns6t.net/azimuth/
+
+[14] AD8397 Datasheet including LTSpice model, https://www.analog.com/en/products/ad8397.html
