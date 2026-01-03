@@ -24,15 +24,15 @@ Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywn�
 
 Śledząc tematykę odbioru sygnałów VLF można zauważyć, że najbardziej popularnymi typami anten dla tych długości fal są anteny pętlowe i miniwhip. Antena pętlowa reaguje na składową magnetyczną fali radiowej co czyni ją bardziej odporną na zakłócenia przemysłowe, ponadto magnetyczna antena pętlowa cechuje się dużą kierunkowością co pomaga w zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła nieporzadanej emisji. Antena miniwhip, którą wykorzystałem podczas nieudanej próby reaguje z kolei na składową elektryczną i dlatego wykazuje dużą wrażliwość na zakłócenia przemysłowe (których źrodłem mogą być np. stacje transformatorowe lub zasilacze impulsowe).  
 
-Antenę pętlową zbudowałem na ramie drewnianej w kształcie kwadratu o boku 80cm. Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [4] przymocowane do drewnianej ramy (indukcyjność: 2.45mH, rezystancja: 68 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
+Antenę pętlową zbudowałem na ramie drewnianej w kształcie kwadratu o boku 80cm. Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 2.45mH, rezystancja: 68 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
 
 Warto też wspomnieć, że wybór pomiędzy anteną pętlową a aktywną anteną miniwhip w dużej mierze zależy od warunków panujących w danej lokalizacji. W przypadku obszarów miejskich o potencjalnie dużym poziomie zakłóceń przemysłowych bardziej optymalnym wyborem wydaje się być antena pętlowa. W warunkach wiejskich antena miniwhip ze względu na wysoką czułość oraz niski poziom zakłóceń występujących w takim środowisku może być znakomitym wyborem.
 
-W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny miniwhip jest jak najbardziej możliwy, oczywiście przy założeniu niskiego poziomu zakłóceń wstępujących w miejscu odbioru (przypadek Jacka SP5PBE, który z powodzeniem wykorzystuje ten rodzaj anteny.
+W praktyce odbiór sygnału SAQ w obszarze miejskim przy wykorzystaniu anteny miniwhip jest jak najbardziej możliwy, oczywiście przy założeniu niskiego poziomu zakłóceń wstępujących w miejscu odbioru.
 
 ## Orientacja Anteny względem radiostacji SAQ
 
-Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgrubnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętajmy o odznaczeniu opcji "true north" jeśli taka możliwość występuje w naszej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [4], 
+Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgrubnie przy użyciu aplikacji kompasa dostępnej w telefonach komórkowych (pamiętajmy o odznaczeniu opcji "true north" jeśli taka możliwość występuje w naszej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [12], 
 
 <p align="center">
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
@@ -40,7 +40,7 @@ Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana
 
 *Zdjęcie 3: Strona internetowa, która wylicza koordynaty lokalizacji o podanym adresie.*
 
-zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [5].
+zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą można wygenerować pod adresem [13].
 
 <p align="center">
 <img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
@@ -66,7 +66,7 @@ W ramach tego projektu wprowadziłem następujące modyfikacje:
 1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
 2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
 3) Dodano wyjście sma-c w celu łatwiejszego przyłącznia odbiornika SDR takiego jak np. RSP1A [3], w przypadku współpracy przedwzmacniacza z odbiornikiem SDR nie jest wymagany dodatkowy tłumik sygnału, Funkcję tę realizuje filtr górnoprzepustowy utworzony przez elementy C10 (100 nF) oraz rezystor R9 (1 kΩ). Częstotliwość graniczna tego filtra ulega przesunięciu w kierunku niższych częstotliwości w wyniku przyłączenia odbiornika SDR, którego impedancja wejściowa jest dużo niższa od rezystancji R9 (oraz impedancji wejściowej karty dźwiękowej). W efekcie dla pasma VLF poziom sygnału wyjściowego z przedwzmacniacza obniża się o około 10dB w stosunku do odbioru z wykorzystaniem karty dźwiękowej.
-4) Baterie 4V zastąpiono bardziej dostępnymi bateriami 9V.
+4) Baterie 4V zastąpiono bardziej dostępnymi bateriami 9V. Zasilanie bateryjne pozwala na obniżenie poziomu zakłóceń docierających do wzmacniacza.
 5) Dodano proste układy monitorujące stan baterii oparte o tranzystor BC546 oraz diody zabezpieczające przed niewłaściwą polaryzacją. W przypadku obniżenia napięcia zasilania poniżej 8,11V kolor diod LED D3/D4 zmienia się z zielonego na czerwony. Wykorzystany układ monitorujący jest modyfikacją rozwiązania opisanego przez Einara Abella na portalu EDN [9].
 
 <p align="center">
@@ -78,6 +78,8 @@ W ramach tego projektu wprowadziłem następujące modyfikacje:
 </p>
 
 *Zdjęcia 6,7,8: Konstrukcja mechaniczna układu przedwzmacniacza.*
+
+Intuicja sugeruje, że przedwzmacniacz powinien być umieszczony możliwie najbliżej anteny i połączony z nią jak najkrótszym przewodem. W przeprowadzonych przeze mnie testach długość kabla łączącego antenę z przedwzmacniaczem oraz jego odległość od anteny nie miały jednak zauważalnego wpływu na jakość odbioru.
 
 ## Strojenie przedwzmacniacza
 
@@ -91,7 +93,7 @@ W przypadku strojenia przy użyciu generatora funkcjnego należy pamiętać o w�
 
 *Zdjęcie 9: Widmo sygnału na wyjściu przedwzmacniacza z odłączoną anteną.*
 
-### Preamplifier performance
+### Parametry przedwzmacniacza
 
 <p align="center">
 <img src="./img/preamp/preamp_bandwidth.png" width="600" height="400"/>
@@ -242,3 +244,9 @@ Ze względu na regularne emisje stacji SAQ oraz możliwość całorocznych nasł
 [9] Układ monitorowania zasilania, Einar Abell, EDN 2 Marca 2015, https://www.edn.com/voltage-indicator-transitions-between-colours/
 
 [10] Strona producenta Zoom, https://www.zoom-europe.com/pl/podreczne-dyktafony/zoom-h1e
+
+[11] zawieszki
+
+[12] Portal umożliwiający odszukanie koordynat danej lokalizacji,  https://www.gps-coordinates.net/
+
+[13] Portal umożliwiający generowanie map azymutowych autorstwa Thomasa Epperly, NS6T, https://ns6t.net/azimuth/
