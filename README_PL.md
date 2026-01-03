@@ -63,8 +63,8 @@ Konstrukcja przedwzmacniacza jest oparta o podwójny wzmacniacz operacyjny firmy
 *Zdjęcie 5: Schemat ideowy przedwzmacniacza wraz z układem monitorowania zasilania.*
 
 W ramach projektu układ bazowy uzupełniono o następujące elementy:
-1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u
-2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm
+1) Kondensatory odsprzęgające 1uF zostały zastąpione parami kondensatorów 100n oraz 10u.
+2) Uzwojenie wtórne transformatora wejściowego T1 zwiększono z 90 do 100 zwojów drutu o średnicy 0.2mm.
 3) Dodano wyjście sma-c w celu łatwiejszego przyłącznia odbiornika SDR takiego jak np. RSP1A [3]. W przypadku współpracy przedwzmacniacza z odbiornikiem SDR nie jest wymagany dodatkowy tłumik sygnału, funkcję tę realizuje filtr górnoprzepustowy utworzony przez elementy C10 (100 nF) oraz rezystor R9 (1 kΩ). Częstotliwość graniczna tego filtra ulega przesunięciu w kierunku niższych częstotliwości w wyniku przyłączenia odbiornika SDR, którego impedancja wejściowa jest dużo niższa od rezystancji R9 (oraz impedancji wejściowej karty dźwiękowej). W efekcie dla pasma VLF poziom sygnału wyjściowego z przedwzmacniacza obniża się o około 10dB w stosunku do odbioru z wykorzystaniem karty dźwiękowej.
 4) Baterie 4V zastąpiono bardziej dostępnymi bateriami 9V. Zasilanie bateryjne pozwala na obniżenie poziomu zakłóceń docierających do wzmacniacza.
 5) Dodano proste układy monitorujące stan baterii oparte o tranzystor BC546 oraz diody zabezpieczające przed niewłaściwą polaryzacją. W przypadku obniżenia napięcia zasilania poniżej 8,11V kolor diod LED D3/D4 zmienia się z zielonego na czerwony. Wykorzystany układ monitorujący jest modyfikacją rozwiązania opisanego przez Einara Abella na portalu EDN [9].
