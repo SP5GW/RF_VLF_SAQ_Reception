@@ -170,10 +170,9 @@ Jeśli zależy nam na maksymalnym obniżeniu poziomu zakłóceń w miejscu odbio
 
 # Jakość odbioru a typ anteny
 
-
 Ze względu na fakt, że wielu użytkowników prowadzi odbiór w środowisku o zbliżonym poziomie zakłóceń do tych które występują w mojej lokalizacji, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz anteny typu mini-whip, zainstalowanych w niewielkiej odległości od siebie.
 
-Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej. Do testów wykorzystano antenę miniwhip konstrukcji Anton Gavrilova, RA0SMS, o porównywalnych parametrach do klasycznego miniwhip'a opracowanego przez Nico Veth'a PA0NHC.
+Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej. Do testów wykorzystano antenę miniwhip konstrukcji Antona Gavrilova, RA0SMS, o porównywalnych parametrach do klasycznego miniwhip'a opracowanego przez Nico Veth'a PA0NHC.
 
 <p align="center">
 <img src="./img/antenna_comparison/AntennaLocation.jpg" width="400" height="300"/>
@@ -183,7 +182,7 @@ Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej. 
 
 ## Wyniki dla anteny pętlowej
 
-Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny pętlowej z przyłączonym przedwzmacniaczem:
+Widma odbieranego sygnału w paśmie VLF, oraz dla częstotlwości DCF-77:
 
 <p align="center">
 <img src="./img/antenna_comparison/loop 2026-01-01 104826.png" width="400" height="300"/>
@@ -194,7 +193,7 @@ Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DC
 
 ## Wyniki dla anteny miniwhip
 
-Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DCF-77 przy pomocy anteny miniwhip:
+Widma odbieranego sygnału w paśmie VLF, oraz dla częstotlwości DCF-77:
 
 <p align="center">
 <img src="./img/antenna_comparison/miniwhip 2026-01-01 104910.png" width="400" height="300"/>
