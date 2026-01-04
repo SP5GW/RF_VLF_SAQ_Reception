@@ -85,7 +85,7 @@ Intuicja sugeruje, że przedwzmacniacz powinien być umieszczony możliwie najbl
 
 Do zestrojenia wzmacniacza na częstotliwość SAQ 17,2 kHz nie jest wymagane użycie specjalistycznej aparatury pomiarowej. Oczywiście możliwe jest wykorzystanie generatora funkcyjnego oraz oscyloskopu, jednak wystarczającą dokładność zapewnia obserwacja poziomu wzmocnienia szumów tła pochodzących z wejścia przedwzmacniacza pozostawionego bez podłączonej anteny. Jeżeli maksimum poziomu szumów występuje w pobliżu częstotliwości SAQ, można uznać, że układ został prawidłowo zestrojony. Należy przy tym uwzględnić, że obwód rezonansowy charakteryzuje się stosunkowo wąskim pasmem przenoszenia — w przedstawionej implementacji wynoszącym około 210 Hz — co wymaga dość precyzyjnego dostrojenia układu.
 
-W przypadku strojenia przy użyciu generatora funkcjnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie w wyniku przełączania źródła sygnału pomiędzy generatorem a anteną. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa niepołączone ze sobą kable o długości ok. 10-15cm, generator musi znajdować się w pobliżu przedwzmacniacza)  lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
+W przypadku strojenia przy użyciu generatora funkcjnego należy pamiętać o właściwym odseparowaniu generatora od układu przedwzmacniacza, aby w trakcie strojenia częstotliwość rezonansu nie uległa zmianie w wyniku przełączania źródła sygnału pomiędzy generatorem a anteną. Dobrym rozwiązaniem jest użycie krótkiej anteny podłączonej do wyjścia generatora (dwa niepołączone ze sobą kable o długości ok. 10-15cm, generator musi znajdować się w pobliżu przedwzmacniacza) lub przyłączenie generatora do układu przedwzmacniacza przez rezystor o dużej oporności np. 100komów. 
 
 <p align="center">
 <img src="/img/preamp/NoInputSignal_Decimation32_SDR_Uno.png" width="600" height="400"/>
@@ -170,9 +170,8 @@ Jeśli zależy nam na maksymalnym obniżeniu poziomu zakłóceń w miejscu odbio
 
 # Jakość odbioru a typ anteny
 
-Niniejsze porównanie zostało przeprowadzone w obszarze miejskim, charakteryzującym się stosunkowo wysokim poziomem zakłóceń (m.in. zasilacze impulsowe, stacja transformatorowa zlokalizowana w odległości nie większej niż 80 m od anten oraz stacja bazowa telefonii komórkowej oddalona o nie więcej niż 100 m).
 
-Ze względu na fakt, że wielu użytkowników prowadzi odbiór w środowisku o zbliżonym poziomie zakłóceń, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz anteny typu mini-whip, zainstalowanych w niewielkiej odległości od siebie.
+Ze względu na fakt, że wielu użytkowników prowadzi odbiór w środowisku o zbliżonym poziomie zakłóceń do tych które występują w mojej lokalizacji, zdecydowałem się na wykonanie i prezentację pomiarów dla anteny pętlowej oraz anteny typu mini-whip, zainstalowanych w niewielkiej odległości od siebie.
 
 Sposób zawieszenia porównywanych anten został pokazany na zdjęciu poniżej. Do testów wykorzystano antenę miniwhip konstrukcji Anton Gavrilova, RA0SMS, o porównywalnych parametrach do klasycznego miniwhip'a opracowanego przez Nico Veth'a PA0NHC.
 
@@ -205,6 +204,8 @@ Od lewej widmo odbieranego sygnału w paśmie VLF, oraz widmo sygnału stacji DC
 *Zdjęcia 21,22: Od lewej: Widmo sygnału dla pasma VLF oraz częstotliwości DCF-77. W obydwu przypadkach do odbioru wykorzystywana jest antena miniwhip.*
 
 W moim przypadku, odbiór sygnałów w paśmie VLF oraz sygnału synchronizacji czasu DCF-77 był możliwy wyłącznie z wykorzystaniem przedwzmacniacza wraz z anteną pętlową. 
+
+Należy jeszcze raz podkreślić, że porównanie wykonano w obszarze miejskim o wysokim poziomie zakłóceń, generowanych m.in. przez zasilacze impulsowe, stację transformatorową zlokalizowaną w promieniu do 80 m od anten oraz stację bazową telefonii komórkowej znajdującą się w odległości ok. 100 m.
 
 # Podsumowanie
 
