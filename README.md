@@ -24,7 +24,7 @@ Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywn�
 
 Śledząc tematykę odbioru sygnałów VLF można zauważyć, że najbardziej popularnymi typami anten dla tych długości fal są anteny pętlowe [7][15] i miniwhip [2]. Antena pętlowa reaguje na składową magnetyczną fali radiowej co czyni ją bardziej odporną na zakłócenia przemysłowe, ponadto antena pętlowa cechuje się dużą kierunkowością co pomaga w dalszym zminimalizowaniu zakłóceń przez właściwą orientację anteny względem źródła niepożądanej emisji. Antena typu miniwhip, wykorzystana podczas nieudanej próby, reaguje na składową elektryczną pola elektromagnetycznego, w związku z czym charakteryzuje się wysoką podatnością na zakłócenia, których źródłem mogą być m.in. pobliskie stacje transformatorowe oraz zasilacze impulsowe.
 
-Antenę pętlową zbudowałem na ramie drewnianej w kształcie prostokąta o bokach 80 i 84cm (grubość listwy-kontówki 2cm, krótszy bok zawieszony równolegle do ziemi). Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 24.7mH, rezystancja: 61 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny pomiędzy różnymi lokalizacjami.
+Antenę pętlową zbudowałem na ramie drewnianej w kształcie prostokąta o bokach 80 i 84cm (grubość listwy-kontówki 2cm, krótszy bok zawieszony równolegle do ziemi). Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 24.7mH, rezystancja: 61 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny.
 
 Należy również podkreślić, że wybór pomiędzy anteną pętlową a aktywną anteną typu miniwhip w dużej mierze zależy od warunków środowiskowych panujących w danej lokalizacji. W obszarach miejskich, charakteryzujących się podwyższonym poziomem zakłóceń przemysłowych, korzystniejszym rozwiązaniem jest zazwyczaj antena pętlowa. Z kolei w środowisku, gdzie poziom zakłóceń jest istotnie niższy, antena miniwhip — ze względu na wysoką czułość — może zapewniać lepsze rezultaty.
 
@@ -46,7 +46,7 @@ zaś azymut na który musiałem skierować antenę odczytałem z mapy, którą m
 <img src="./img/antenna_positioning/AzimuthMap.png" width="400" height="300"/>
 </p>
 
-*Zdjęcie 4: Strona internetowa, która umożliwia wygenerowanie mapy azymutów.*
+*Zdjęcie 4: Mapa azymutów z zaznaczonym kierunkiem ustawienia anteny.*
   
 W sytuacji gdy w naszej lokalizacji występuje silne źródło zakłóceń kierunkowych warto rozważyć takie ustawienie anteny, które skutkuje najwyższym współczynnikiem sygnału do szumu co nie zawsze będzie tożsame z najwyższym poziomem odbieranego sygnału pożądanego.
 
