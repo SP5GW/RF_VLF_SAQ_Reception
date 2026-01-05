@@ -26,13 +26,13 @@ Podczas pierwszej próby odbioru sygnału SAQ posłużyłem się anteną aktywn�
 
 Antenę pętlową zbudowałem na ramie drewnianej w kształcie prostokąta o bokach 80 i 84cm (grubość listwy-kontówki 2cm, krótszy bok zawieszony równolegle do ziemi). Uzwojenie anteny to 80 zwojów drutu o średnicy 0.2mm nawiniętego na plastikowe prowadnice [11] przymocowane do drewnianej ramy (indukcyjność: 24.7mH, rezystancja: 61 omów). Antena nie posiada kondensatora strojeniowego, ponieważ obwód rezonansowy zestrojony na częstotliwość SAQ jest częścią układu przedwzmacniacza. Wymiary anteny są znacząco mniejsze od długości fal z zakresu VLF i dlatego nie są krytyczne. Wybór długości boku został podyktowany głównie walorami praktycznymi takimi jak swoboda przemieszczania anteny.
 
-Należy również podkreślić, że wybór pomiędzy anteną pętlową a aktywną anteną typu miniwhip w dużej mierze zależy od warunków środowiskowych panujących w danej lokalizacji. W obszarach miejskich, charakteryzujących się podwyższonym poziomem zakłóceń przemysłowych, korzystniejszym rozwiązaniem jest zazwyczaj antena pętlowa. Z kolei w środowisku, gdzie poziom zakłóceń jest istotnie niższy, antena miniwhip — ze względu na wysoką czułość — może zapewniać lepsze rezultaty.
+Należy również podkreślić, że wybór pomiędzy anteną pętlową a aktywną anteną typu miniwhip w dużej mierze zależy od warunków środowiskowych panujących w danej lokalizacji. W obszarach miejskich, charakteryzujących się podwyższonym poziomem zakłóceń, korzystniejszym rozwiązaniem jest zazwyczaj antena pętlowa. Z kolei w środowisku, gdzie poziom zakłóceń jest istotnie niższy, antena miniwhip — ze względu na wysoką czułość — może zapewniać lepsze rezultaty.
 
 Należy zaznaczyć, że w praktyce odbiór sygnału SAQ w obszarze miejskim z wykorzystaniem anteny miniwhip jest jak najbardziej możliwy, pod warunkiem występowania niskiego poziomu zakłóceń w miejscu odbioru.
 
 ## Orientacja Anteny względem radiostacji SAQ
 
-Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgrubnie przy użyciu aplikacji kompasu dostępnej w telefonach komórkowych (pamiętajmy o wyborze opcji "true north" jeśli taka możliwość występuje w naszej aplikacji). W moim przypadku użyłem GPS Compass dostępnej dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [12], 
+Orientacja anteny nie wymaga specjalistycznego sprzętu i może zostać wykonana zgrubnie przy użyciu aplikacji kompasu dostępnej w telefonach komórkowych (pamiętajmy o wyborze opcji "true north" jeśli taka możliwość występuje w wybranym oprogramowaniu). W moim przypadku użyłem GPS Compass dla systemu iOS. Koordynaty lokalizacji anteny odnalazłem na stronie [12], 
 
 <p align="center">
 <img src="./img/antenna_positioning/coordinates.png" width="400" height="300"/>
@@ -107,7 +107,7 @@ W przypadku strojenia przy użyciu generatora funkcyjnego należy pamiętać o w
 
 *Zdjęcie 11: Oszacowanie wzmocnienia układu w obszarze rezonansu obwodów wejściowych.*
 
-Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszenia obwodu rezonansowego, co można z powodzeniem wykorzystać do odbioru stacji innych niż SAQ nadających na częstotliwościach nawet z zakresu fal długich. Prezentowany układ pozwolił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60 kHz) oraz DCF-77 (77.5 kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu miniwhip czy "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m).
+Jak można zauważyć w oparciu o powyższe ilustracje, wzmacniacz nie wprowadza tłumienia, poza pasmem przenoszenia obwodu rezonansowego, co umożliwia odbiór stacji innych niż SAQ nadających na częstotliwościach nawet z zakresu fal długich. Prezentowany układ pozwolił np. na stabilny odbiór sygnałów synchronizacji czasu NPL (60 kHz) oraz DCF-77 (77.5 kHz). W tej samej lokalizacji odbiór tych sygnałów był bardzo niestabilny, a często nawet niemożliwy przy użyciu anteny typu miniwhip czy "random wire" (w tym konkretnym przypadku długość elementu odbiorczego wynosiła ok. 13m).
 
 ## Potencjalne problemy do uniknięcia
 
@@ -166,7 +166,7 @@ W przypadku odbioru z wykorzystaniem układu SDR wybór oprogramowania jest bard
 
 *Zdjęcie 17: Odbiór sygnałów VLF przy pomocy programu SDRUno (wyjście przedwzmacniacza jest podłączone do wejścia antenowego odbiornika SDR RSP1A firmy SDRPlay)*
 
-Jeśli zależy nam na maksymalnym obniżeniu poziomu zakłóceń w miejscu odbioru, wówczas należałoby rozważyć zastąpienie komputera PC oraz odbiornika SDR dobrej jakości dyktafonem z wejściem liniowym oraz wysoką częstotliwością próbkowania takim jak np.: Zoom H1 Essential [10]. W takiej sytuacji wskazany jest również odbiór z obszaru o niskim poziomie zakłóceń przemysłowych.
+Jeśli zależy nam na maksymalnym obniżeniu poziomu zakłóceń w miejscu odbioru, wówczas należałoby rozważyć zastąpienie komputera PC oraz odbiornika SDR dobrej jakości dyktafonem z wejściem liniowym oraz wysoką częstotliwością próbkowania takim jak np.: Zoom H1 Essential [10]. W takiej sytuacji wskazany jest również odbiór z obszaru o niskim poziomie zakłóceń.
 
 # Jakość odbioru a typ anteny
 
